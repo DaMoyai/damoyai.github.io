@@ -312,6 +312,9 @@ img.emoji {
 
 /* Responsive*/
 @media screen and (max-width: 1024px) {
+	html,body{
+		margin-top: 50px !important;
+	}
 	header {
 		width: 100% !important;
 		height: 100px;
@@ -345,8 +348,12 @@ img.emoji {
 	}
 	header h1 {
 		font-size: 35px;
-		margin-left: 25px;
-		margin-top: 7px;
+		margin-left: -70px;
+		margin-top: 0px;
+	}
+	header h1::after{
+		position:absolute;
+		margin-top: 20px;
 	}
 
 	#main-nav {
@@ -380,26 +387,28 @@ img.emoji {
 		margin: 3px;
 		padding: 0;
 		background-color: #000000;
-		text-rendering: optimizeSpeed;
 	}
 	.btn {
-		background-color: var(--blurple);
-		border-style: hidden;
-		height: 30px;
-		width: 100px;
-		transition: 0.2s;
-		border-radius: 4px;
-		padding: 2px 16px;
-		font-family: "text3", sans-serif;
-		font-weight: 500;
-		font-size: larger;
-		color: #ffffff;
-		text-decoration: none;
-		display: block;
-		text-align: center;
-		font-size: larger;
-		opacity: 1;
-	}
+	background-color: var(--blurple);
+	border-style: hidden;
+	height: auto;
+	min-height: 90px;
+	width: 300px !important;
+	max-width: none !important;
+	transition: 0.2s;
+	border-radius: 4px;
+	padding: 2px 16px;
+	font-family: "text3", sans-serif;
+	font-weight: 500;
+	font-size: larger;
+	color: #ffffff;
+	text-decoration: none;
+	display: grid;
+	text-align: center;
+	font-size: larger;
+	opacity: 1;
+}
+
 
 }
 
