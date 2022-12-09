@@ -7,14 +7,16 @@
 
 /* Main */
 
-html,
+
 body {
 	background-color: #36393f;
 	scroll-behavior: smooth;
-	margin-top: 42px;
+	margin-top: 62px;
 	line-height: 1.5;
-	margin-left: 100px;
-	box-sizing: border-box;
+}
+footer{
+	background-color: #2f3136;
+	height: 100px;
 }
 
 #title::after {
@@ -34,9 +36,37 @@ button {
 .buttonContainer {
 	width: 1px;
 }
-.container {
+body .container {
+	width: auto;
+	padding-right: 15px;
+	padding-left: 15px;
+	margin-right: auto;
+	margin-left: 200px;
+}
+#main-nav .container {
 	display: flex;
 }
+
+.card {
+	overflow-wrap: break-word;
+	width: fit-content;
+	max-width: 900px;
+	margin-left: 300px;
+	padding: 10px 10px;
+	background-color: #7289da28;
+	border: 1px solid #7289da;
+	border-radius: 5px;
+	pointer-events: none;
+}
+.card > p,h5,h4,h3 {
+	margin: 0px;
+}
+
+#cardYlw {
+	background: #e1931736;
+	border: 1px solid #faa61a;
+}
+
 li {
 	list-style: disc;
 	font-family: "text", sans-serif;
@@ -85,11 +115,11 @@ li {
 	border: 0;
 	margin: 0;
 }
-#defaultSep {
+hr {
 	margin: 0;
 	height: 2px;
 	border: 0;
-	background: #42454a;
+	background: #4d5057;
 }
 #cmds {
 	font-family: "text2", sans-serif;
@@ -112,10 +142,11 @@ li {
 	font-size: larger;
 	color: #ffffff;
 	text-decoration: none;
-	display: grid;
-	text-align: center;
+	position: relative;
+	display:block;
 	font-size: larger;
 	opacity: 1;
+	align-items: center;
 }
 .btn:hover {
 	border-style: hidden;
@@ -179,8 +210,8 @@ header {
 	opacity: 0.8;
 }
 #logo img {
-	margin-top: 2px;
 	width: 100%;
+	height: 40px;
 }
 
 header nav ul li:hover {
@@ -197,7 +228,7 @@ header nav ul {
 }
 header h1 {
 	font-size: 25px;
-	margin-left: 35px;
+	margin-left: -130px;
 	margin-top: 7px;
 }
 /* Main*/
@@ -229,14 +260,7 @@ header h1 {
 	color: var(--blurple);
 	font-family: "discord";
 }
-.hrlol {
-	margin: 0px;
-	height: 2px;
-	width: 175px;
-	background: #42454a;
-	border: 0;
-	margin: 0;
-}
+
 #defaultSep {
 	margin: 0;
 	height: 2px;
@@ -312,7 +336,8 @@ img.emoji {
 
 /* Responsive*/
 @media screen and (max-width: 1024px) {
-	html,body{
+	html,
+	body {
 		margin-top: 50px !important;
 	}
 	header {
@@ -351,8 +376,8 @@ img.emoji {
 		margin-left: -70px;
 		margin-top: 0px;
 	}
-	header h1::after{
-		position:absolute;
+	header h1::after {
+		position: absolute;
 		margin-top: 20px;
 	}
 
@@ -379,7 +404,9 @@ img.emoji {
 	h1 {
 		font-size: 70px;
 	}
-	p,a,li {
+	p,
+	a,
+	li {
 		font-size: 50px !important;
 	}
 	html,
@@ -389,27 +416,25 @@ img.emoji {
 		background-color: #000000;
 	}
 	.btn {
-	background-color: var(--blurple);
-	border-style: hidden;
-	height: auto;
-	min-height: 90px;
-	width: 300px !important;
-	max-width: none !important;
-	transition: 0.2s;
-	border-radius: 4px;
-	padding: 2px 16px;
-	font-family: "text3", sans-serif;
-	font-weight: 500;
-	font-size: larger;
-	color: #ffffff;
-	text-decoration: none;
-	display: grid;
-	text-align: center;
-	font-size: larger;
-	opacity: 1;
-}
-
-
+		background-color: var(--blurple);
+		border-style: hidden;
+		height: auto;
+		min-height: 90px;
+		width: 300px !important;
+		max-width: none !important;
+		transition: 0.2s;
+		border-radius: 4px;
+		padding: 2px 16px;
+		font-family: "text3", sans-serif;
+		font-weight: 500;
+		font-size: larger;
+		color: #ffffff;
+		text-decoration: none;
+		display: grid;
+		text-align: center;
+		font-size: larger;
+		opacity: 1;
+	}
 }
 
 /**Scrollbar*/
