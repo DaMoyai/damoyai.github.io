@@ -7,14 +7,13 @@
 
 /* Main */
 
-
 body {
 	background-color: #36393f;
 	scroll-behavior: smooth;
 	margin-top: 62px;
 	line-height: 1.5;
 }
-footer{
+footer {
 	background-color: #2f3136;
 	height: 100px;
 }
@@ -58,7 +57,10 @@ body .container {
 	border-radius: 5px;
 	pointer-events: none;
 }
-.card > p,h5,h4,h3 {
+.card > p,
+h5,
+h4,
+h3 {
 	margin: 0px;
 }
 
@@ -143,7 +145,7 @@ hr {
 	color: #ffffff;
 	text-decoration: none;
 	position: relative;
-	display:block;
+	display: block;
 	font-size: larger;
 	opacity: 1;
 	align-items: center;
@@ -211,7 +213,8 @@ header {
 }
 #logo img {
 	width: 100%;
-	height: 40px;
+	height: 45px;
+	border-radius: 10px;
 }
 
 header nav ul li:hover {
@@ -335,7 +338,15 @@ img.emoji {
 }
 
 /* Responsive*/
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1000px) {
+	body .container {
+		width: auto;
+		padding-right: 15px;
+		padding-left: 5px;
+		margin-right: auto;
+		margin-left: 20px;
+	}
+
 	html,
 	body {
 		margin-top: 50px !important;
@@ -350,10 +361,7 @@ img.emoji {
 
 		font-size: 20px;
 	}
-	#logo {
-		margin-top: 5px;
-		width: 50px;
-	}
+
 	#greenbtn {
 		margin-left: 10%;
 		background-color: var(--green);
@@ -372,9 +380,17 @@ img.emoji {
 		line-height: normal;
 	}
 	header h1 {
-		font-size: 35px;
-		margin-left: -70px;
-		margin-top: 0px;
+		display: none;
+	}
+	#logo{
+		margin: 0;
+		border-radius: 500px;
+	}
+	#logo img {
+		margin-top: 5px;
+		width: 100px;
+		height: 90px !important;
+		border-radius: 10px;
 	}
 	header h1::after {
 		position: absolute;
@@ -385,12 +401,7 @@ img.emoji {
 		font-size: 10px;
 		text-decoration: none;
 	}
-	#home h1 {
-		font-size: 160px;
-	}
-	#home h2 {
-		font-size: 150;
-	}
+
 	h3 {
 		padding-top: 3px;
 	}
