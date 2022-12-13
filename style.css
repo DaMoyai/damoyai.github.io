@@ -3,9 +3,14 @@
 	--green: #43b581;
 	--gray: #4f545c;
 	--red: #f04747;
+	--font-normal: "Whitney", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 /* Main */
+* {
+	color: #e7ebf0;
+	font-family: var(--font-normal);
+}
 html {
 	text-rendering: optimizeLegibility;
 	scroll-behavior: smooth;
@@ -62,7 +67,6 @@ body .container {
 
 li {
 	list-style: disc;
-	font-family: Whitney, sans-serif;
 }
 #logo {
 	transition: 0.2s;
@@ -81,7 +85,6 @@ h6 {
 }
 a {
 	color: #7b95f1;
-	font-family: "Whitney", sans-serif;
 	font-weight: 600;
 	text-decoration: none;
 	font-size: 18px;
@@ -97,7 +100,6 @@ a:active {
 }
 p,
 li {
-	font-family: Whitney, sans-serif;
 	font-size: 18px;
 	color: #e7ebf0;
 	text-decoration: none;
@@ -214,14 +216,18 @@ header nav ul li {
 header nav ul {
 	display: flex;
 	line-height: normal;
-	height: 0px;
+	height: 30px;
 	float: right;
+}
+header h1 a {
+	height: 1px !important;
 }
 .headContainer h1 {
 	font-size: 25px;
 	margin-top: 7px;
 	width: max-content;
 	padding: none;
+	height: 0px;
 }
 
 /* Fonts*/
@@ -240,27 +246,27 @@ header nav ul {
 	font-style: normal;
 }
 @font-face {
-	font-family: "Whitney";
+	font-family: whitney;
 	font-weight: 300;
 	src: url(https://moyaiu.github.io/OldCord/src/assets/thin.woff2) format("woff2");
 }
 @font-face {
-	font-family: "Whitney";
+	font-family: whitney;
 	src: url(https://moyaiu.github.io/OldCord/src/assets/normal.woff2);
 }
 @font-face {
 	font-weight: 500;
-	font-family: "Whitney";
+	font-family: whitney;
 	src: url(https://moyaiu.github.io/OldCord/src/assets/kindaBold.woff2);
 }
 @font-face {
-	font-family: "Whitney";
+	font-family: whitney;
 	font-weight: 600;
 	src: url(https://moyaiu.github.io/OldCord/src/assets/bold.woff2) format("woff2");
 }
 @font-face {
 	font-weight: 700;
-	font-family: "Whitney";
+	font-family: whitney;
 	src: url(https://moyaiu.github.io/OldCord/src/assets/veryBold.woff2);
 }
 
